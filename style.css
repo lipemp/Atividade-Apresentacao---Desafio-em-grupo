@@ -41,21 +41,53 @@ body {
 }
 
 .alienJump {
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
     opacity: 0;
-    animation: alienEntrance 6s linear 3s 1 forwards;
+    animation: alienEntrance 6s linear 3s infinite forwards;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-direction: alternate;
 }
 
 .alienJump2 {
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 100px;
     opacity: 0;
-    animation:alienEntrance 6s linear 3.5s 1 forwards;
+    animation:alienEntrance 6s linear 4s infinite forwards;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-direction: alternate;
+}
+
+.alienJump3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    animation:alienEntrance 6s linear 5s infinite forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-direction: alternate;
+}
+
+.alienJump4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    animation:alienEntrance 6s linear 6s infinite forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-direction: alternate;
+}
+
+.alienJump5 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    animation:alienEntrance 6s linear 3.5s infinite forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-direction: alternate;
 }
 
 .text {
@@ -70,7 +102,7 @@ body {
     }
 
     100% {
-        transform: translate(300px, 300px);
+        transform: translate(350px, 380px);
         opacity: 1;
     }
 }
@@ -86,12 +118,12 @@ body {
 
 @keyframes alienEntrance {
     0% {
-        transform: translate(6000px, 2400px);
+        transform: translate(5500px, 2400px);
         scale: 0.3;
         opacity: 0;
     }
     1% {
-        transform: translate(6000px, 2400px);
+        transform: translate(5500px, 2400px);
         scale: 0.3;
         opacity: 1;
     }
